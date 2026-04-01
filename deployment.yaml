@@ -16,7 +16,7 @@ spec:
         - name: simple-java-app
           image: suryar07/java-test-app:latest
           ports:
-            - containerPort: 8082
+            - containerPort: 8081
 
 ---
 apiVersion: v1
@@ -29,5 +29,5 @@ spec:
     app: simple-java-app
   ports:
     - port: 80
-      targetPort: 8082
+      targetPort: 8081
       nodePort: 30008
